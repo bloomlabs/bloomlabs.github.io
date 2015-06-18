@@ -73,3 +73,6 @@ dist/
 _site/
 .DS_Store
 *.swp
+
+### Bower ###
+/bower_components/
