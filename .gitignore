@@ -68,3 +68,8 @@ dist/
 
 ### Vagrant ###
 .vagrant/
+
+### Jekyll ###
+_site/
+.DS_Store
+*.swp
