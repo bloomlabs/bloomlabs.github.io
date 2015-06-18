@@ -61,7 +61,6 @@ Temporary Items
 ### grunt ###
 # Grunt usually compiles files inside this directory
 dist/
-/vendor/
 
 # Grunt usually preprocesses files such as coffeescript, compass... inside the .tmp directory
 .tmp/
