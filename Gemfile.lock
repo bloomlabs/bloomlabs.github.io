@@ -22,7 +22,7 @@ GEM
     fast-stemmer (1.0.2)
     ffi (1.9.8)
     gemoji (2.1.0)
-    github-pages (38)
+    github-pages (37)
       RedCloth (= 4.2.9)
       github-pages-health-check (~> 0.2)
       jekyll (= 2.4.0)
@@ -37,9 +37,9 @@ GEM
       liquid (= 2.6.2)
       maruku (= 0.7.0)
       mercenary (~> 0.3)
-      pygments.rb (= 0.6.3)
+      pygments.rb (= 0.6.1)
       rdiscount (= 2.1.7)
-      redcarpet (= 3.3.1)
+      redcarpet (= 3.1.2)
       terminal-table (~> 1.4)
     github-pages-health-check (0.3.1)
       net-dns (~> 0.6)
@@ -91,6 +91,8 @@ GEM
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
     maruku (0.7.0)
+    materialize-sass (0.96.2)
+      sass (~> 3.3)
     mercenary (0.3.5)
     mini_portile (0.6.2)
     minitest (5.7.0)
@@ -101,14 +103,14 @@ GEM
       blankslate (~> 2.0)
     posix-spawn (0.3.11)
     public_suffix (1.5.1)
-    pygments.rb (0.6.3)
+    pygments.rb (0.6.1)
       posix-spawn (~> 0.3.6)
       yajl-ruby (~> 1.2.0)
     rb-fsevent (0.9.5)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
     rdiscount (2.1.7)
-    redcarpet (3.3.1)
+    redcarpet (3.1.2)
     safe_yaml (1.0.4)
     sass (3.4.14)
     terminal-table (1.4.5)
@@ -125,7 +127,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  github-pages
+  github-pages (= 37)
+  json
+  materialize-sass
 
 BUNDLED WITH
    1.10.4
