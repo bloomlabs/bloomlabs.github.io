@@ -91,8 +91,6 @@ GEM
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
     maruku (0.7.0)
-    materialize-sass (0.96.2)
-      sass (~> 3.3)
     mercenary (0.3.5)
     mini_portile (0.6.2)
     minitest (5.7.0)
@@ -129,7 +127,6 @@ PLATFORMS
 DEPENDENCIES
   github-pages (= 37)
   json
-  materialize-sass
 
 BUNDLED WITH
    1.10.4
