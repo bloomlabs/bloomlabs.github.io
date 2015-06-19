@@ -3,10 +3,13 @@
 ---
 @charset "utf-8";
 
-
+@font-face {
+    font-family: "CenturyGothic";
+    src: url(vendor/font/century-gothic/GOTHIC.TTF);
+}
 
 // Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-family: "CenturyGothic";
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
