@@ -7,7 +7,7 @@ categories: bloom general
 summary: "A bit of info about bloom and our plans for the future."
 ---
 
-So for everyone who has previously known as Profectus and the Innovation Hub @ St Cat's we have now rebranded as Bloom and the St Cats BloomLab. We had a variety of reasons for the rebrand, but we hope you like it
+So for everyone who has previously known as Profectus and the Innovation Hub @ St Cat's we have now rebranded as Bloom and the St Cats BloomLab. We had a variety of reasons for the rebrand, but we hope you like it.
 
 We will be blogging in the future about a variety of topics to get any entrepreneur off of the groud. These will range from programming and tech basics, do simple business law and accounting. We will also have some interviews with entrepreneurs that come through the lab.
 
