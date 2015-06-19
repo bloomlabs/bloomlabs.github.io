@@ -1,7 +1,7 @@
 ---
 layout: post
 author: "John Clema"
-title:  "Bloomin' Fist Post"
+title:  "Bloomin' First Post"
 date:   2015-06-19 18:00:00
 categories: bloom general
 summary: "A bit of info about bloom and our plans for the future."
