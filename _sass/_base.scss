@@ -184,7 +184,73 @@ pre {
     }
 }
 
+/**
+ * Header Title
+ */
 
+.header-title {
+    background-color: $primary-color;
+    > h1 {
+        color: $icon-menu-text-color;
+    }
+    > h6 {
+        color: $light-primary-color;
+    }
+}
+
+/**
+ * Form
+ */
+
+/* label color */
+.input-field label {
+    color: $text-color;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+    color: $primary-color;
+}
+
+/* label underline focus color */
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid $primary-color;
+    box-shadow: 0 1px 0 0 $primary-color;
+}
+
+/* label focus color */
+.input-field input[type=email]:focus + label {
+    color: $primary-color;
+}
+
+/* label underline focus color */
+.input-field input[type=email]:focus {
+    border-bottom: 1px solid $primary-color;
+    box-shadow: 0 1px 0 0 $primary-color;
+}
+
+.input-field textarea[type=text]:focus {
+    border-bottom: 1px solid $primary-color;
+    box-shadow: 0 1px 0 0 $primary-color;
+}
+
+/* icon prefix focus color */
+.input-field .prefix.active {
+    color: $primary-color;
+}
+
+.input-field textarea[type=text]:focus {
+    border-bottom: 1px solid $primary-color;
+    box-shadow: 0 1px 0 0 $primary-color;
+}
+
+.input-field textarea[type=text]:focus + label {
+    color: $primary-color;
+}
+
+/* dropdown options color */
+ul.select-dropdown li span {
+    color: $primary-color
+}
 
 /**
  * Icons
