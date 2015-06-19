@@ -189,6 +189,14 @@ pre {
 /**
  * Icons
  */
+
+img.logo {
+    display: inline-block;
+    max-width: 100%;
+    max-height: 58px;
+    vertical-align: middle;
+}
+
 .icon {
 
     > svg {

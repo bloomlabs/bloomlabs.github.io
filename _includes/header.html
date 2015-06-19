@@ -2,7 +2,9 @@
   <div class="navbar-fixed">
     <nav class="light-blue lighten-1 bloom-navigation" role="navigation">
       <div class="nav-wrapper container">
-      <a id="logo-container" href="{{ site.baseurl }}/" class="brand-logo"><img class="brand-logo" src="images/Bloom.png"></a>
+      <a id="logo-container" href="{{ site.baseurl }}/">
+        <img class="logo" src="../images/Bloom.png">
+      </a>
         <ul class="right hide-on-med-and-down">
             {% for page in site.pages %}
               {% if page.title %}
@@ -17,7 +19,7 @@
               {% endif %}
             {% endfor %}
         </ul>
-        <a href="{{ site.baseurl }}/" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
       </div>
     </nav>
   </div>
