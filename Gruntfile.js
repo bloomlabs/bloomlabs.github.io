@@ -4,6 +4,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks("grunt-contrib-copy");
   grunt.loadNpmTasks("grunt-contrib-watch");
   grunt.loadNpmTasks("grunt-exec");
+  grunt.loadNpmTasks("grunt-sitemap");
 
   grunt.initConfig({
     copy: {
@@ -29,6 +30,12 @@ module.exports = function (grunt) {
           dest: "vendor/js/"
         }]
       }
+    },
+    sitemap: {
+        dist: {
+            pattern: ['**/*.html', '!**/google*.html'], // this will exclude 'google*.html'
+            siteRoot: '_site/'
+        }
     },
     exec: {
       jekyll: {
@@ -68,7 +75,7 @@ module.exports = function (grunt) {
   });
   grunt.registerTask("build", ["copy", "exec:jekyll"]);
 
-  grunt.registerTask("serve", ["build","connect:server","watch"]);
+  grunt.registerTask("serve", ["build", "sitemap", "connect:server","watch"]);
 
   grunt.registerTask("default", ["serve"]);
 };
