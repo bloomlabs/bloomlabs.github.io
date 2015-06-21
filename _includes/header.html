@@ -3,7 +3,7 @@
     <nav class="light-blue lighten-1 bloom-navigation" role="navigation">
       <div class="nav-wrapper container">
       <a id="logo-container" href="{{ site.baseurl }}/">
-        <img class="logo" src="../images/Bloom.png">
+        <img class="logo" src="{{ "/images/Bloom.png" | prepend: site.baseurl }}">
       </a>
         <ul class="right hide-on-med-and-down">
             {% include nav.html nav=site.data.menu %}

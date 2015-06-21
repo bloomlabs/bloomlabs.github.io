@@ -5,23 +5,23 @@ permalink: /join/
 ---
 
 <div class="row">
-    <form id="join_form" class="col s12" method="POST">
+    <form id="join_form" class="col s12" method="POST" action="http://formspree.io/john@bloom.org.au">
   		<div class="input-field col s12">
-  			<select form="join">
-  				<option value="1">Membership</option>
-  				<option value="2">Becoming a Mentor</option>
-  				<option value="3">Sponsorship</option>
-  				<option value="4">Other</option>
+  			<select name="query_type" form="join_form">
+  				<option value="Membership">Membership</option>
+  				<option value="Becoming a Mentor">Becoming a Mentor</option>
+  				<option value="Sponsorship">Sponsorship</option>
+  				<option value="Other">Other</option>
   			</select>
   			<label>What are you enquiring about?</label>
   		</div>
         <div class="input-field col s6">
         	<i class="mdi-action-account-circle prefix"></i>
-          <input id="first_name" type="text" class="validate">
+          <input id="first_name" name="first_name" type="text" class="validate">
           <label for="first_name">First Name</label>
         </div>
         <div class="input-field col s6">
-          <input id="last_name" type="text" class="validate">
+          <input id="last_name" name="last_name" type="text" class="validate">
           <label for="last_name">Last Name</label>
         </div>
         <div class="input-field col s12">
@@ -31,21 +31,15 @@ permalink: /join/
         </div>
         <div class="input-field col s12">
           <i class="mdi-communication-message prefix"></i>
-          <textarea id="message" type="text" class="materialize-textarea"></textarea>
+          <textarea id="message" name="message" type="text" class="materialize-textarea"></textarea>
           <label for="message">Message</label>
         </div>
-        <button class="btn waves-effect waves-light indigo col s12 m4 l3 right" type="submit" name="action">Submit
+        <button class="btn waves-effect waves-light indigo col s12 m4 l3 right" type="submit">Submit
           <i class="mdi-content-send right"></i>
         </button>
         <input type="text" name="_gotcha" style="display:none" />
-        <input type="hidden" name="_next" value="//bloom.org.au/thanks.html" />
+        <input type="hidden" name="_next" value="{{ "/thanks/" | prepend: site.baseurl }}" />
         <input type="hidden" name="_subject" value="New submission!" />
     </form>
 
 </div>
-<script type="text/javascript">
-  var contactform =  document.getElementById('contactform');
-    contactform.setAttribute('action', '//formspree.io/' + 'john' + '@' + 'bloom' + '.' +'org' + '.' + 'au');
-</script>
-
-
