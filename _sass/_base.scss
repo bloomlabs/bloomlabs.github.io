@@ -185,20 +185,6 @@ pre {
 }
 
 /**
- * Header Title
- */
-
-.header-title {
-    background-color: $primary-color;
-    > h1 {
-        color: $icon-menu-text-color;
-    }
-    > h6 {
-        color: $light-primary-color;
-    }
-}
-
-/**
  * Form
  */
 
@@ -249,7 +235,7 @@ pre {
 
 /* dropdown options color */
 ul.select-dropdown li span {
-    color: $primary-color
+    color: $primary-color;
 }
 
 /**

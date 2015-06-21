@@ -6,18 +6,10 @@
         <img class="logo" src="../images/Bloom.png">
       </a>
         <ul class="right hide-on-med-and-down">
-            {% for page in site.pages %}
-              {% if page.title %}
-              <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-              {% endif %}
-            {% endfor %}
+            {% include nav.html nav=site.data.menu %}
         </ul>
         <ul id="nav-mobile" class="side-nav">
-          {% for page in site.pages %}
-              {% if page.title %}
-              <li><a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
-              {% endif %}
-            {% endfor %}
+            {% include nav.html nav=site.data.menu %}
         </ul>
         <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
       </div>

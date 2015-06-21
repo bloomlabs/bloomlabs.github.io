@@ -5,16 +5,16 @@ permalink: /join/
 ---
 
 <div class="row">
-    <form class="col s12">
-		<div class="input-field col s12">
-			<select>
-				<option value="1">Membership</option>
-				<option value="2">Becoming a Mentor</option>
-				<option value="3">Sponsorship</option>
-				<option value="4">Other</option>
-			</select>
-			<label>What are you enquiring about?</label>
-		</div>
+    <form id="join_form" class="col s12" method="POST">
+  		<div class="input-field col s12">
+  			<select form="join">
+  				<option value="1">Membership</option>
+  				<option value="2">Becoming a Mentor</option>
+  				<option value="3">Sponsorship</option>
+  				<option value="4">Other</option>
+  			</select>
+  			<label>What are you enquiring about?</label>
+  		</div>
         <div class="input-field col s6">
         	<i class="mdi-action-account-circle prefix"></i>
           <input id="first_name" type="text" class="validate">
@@ -26,7 +26,7 @@ permalink: /join/
         </div>
         <div class="input-field col s12">
         	<i class="mdi-communication-email prefix"></i>
-          <input id="email" type="email" class="validate" length="254">
+          <input id="email" type="email" class="validate" length="254" name="_replyto">
           <label for="email">Email</label>
         </div>
         <div class="input-field col s12">
@@ -34,7 +34,18 @@ permalink: /join/
           <textarea id="message" type="text" class="materialize-textarea"></textarea>
           <label for="message">Message</label>
         </div>
+        <button class="btn waves-effect waves-light indigo col s12 m4 l3 right" type="submit" name="action">Submit
+          <i class="mdi-content-send right"></i>
+        </button>
+        <input type="text" name="_gotcha" style="display:none" />
+        <input type="hidden" name="_next" value="//bloom.org.au/thanks.html" />
+        <input type="hidden" name="_subject" value="New submission!" />
     </form>
-  </div>
+
+</div>
+<script type="text/javascript">
+  var contactform =  document.getElementById('contactform');
+    contactform.setAttribute('action', '//formspree.io/' + 'john' + '@' + 'bloom' + '.' +'org' + '.' + 'au');
+</script>
 
 
