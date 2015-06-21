@@ -34,7 +34,6 @@ module.exports = function (grunt) {
     sitemap: {
         dist: {
             pattern: ['**/*.html', '!**/google*.html'], // this will exclude 'google*.html'
-            siteRoot: '_site/'
         }
     },
     exec: {
