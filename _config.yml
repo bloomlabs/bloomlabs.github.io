@@ -10,7 +10,10 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://bloom.org.au" # the base hostname & protocol for your site
 twitter_username: bloomlabs
 github_username:  bloomlabs
-facebook_page:
+facebook: bloomlabs
+pinterest: bloomlabs
+instagram: bloomlabs
+
 logo_url:
 # Build settings
 markdown: kramdown
