@@ -23,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/bloomlabs/bloomlabs.github.io/issues"
   },
-  "homepage": "https://github.com/bloomlabs/bloomlabs.github.io#readme",
+  "homepage": "http://bloom.org.au",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-bower-task": "^0.4.0",

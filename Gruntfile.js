@@ -33,7 +33,9 @@ module.exports = function (grunt) {
     },
     sitemap: {
         dist: {
-            pattern: ['**/*.html', '!**/google*.html'], // this will exclude 'google*.html'
+            siteRoot: "_site/",
+            pattern: ['_site/**/*.html', '_site/!**/google*.html', '!/node_modules/**'], // this will exclude 'google*.html'
+            homepage: "http://bloom.org.au/"
         }
     },
     exec: {
