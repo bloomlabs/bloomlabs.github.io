@@ -34,7 +34,7 @@ module.exports = function (grunt) {
     sitemap: {
         dist: {
             siteRoot: "_site/",
-            pattern: ['_site/**/*.html', '_site/!**/google*.html', '!/node_modules/**'], // this will exclude 'google*.html'
+            pattern: ['_site/**/*.html', '_site/!**/google*.html'], // this will exclude 'google*.html'
             homepage: "http://bloom.org.au/"
         }
     },
@@ -74,9 +74,9 @@ module.exports = function (grunt) {
       }
     }
   });
-  grunt.registerTask("build", ["copy", "exec:jekyll"]);
+  grunt.registerTask("build", ["copy", "exec:jekyll", "sitemap"]);
 
-  grunt.registerTask("serve", ["build", "sitemap", "connect:server","watch"]);
+  grunt.registerTask("serve", ["build", "connect:server","watch"]);
 
   grunt.registerTask("default", ["serve"]);
 };
