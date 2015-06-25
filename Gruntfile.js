@@ -5,6 +5,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks("grunt-contrib-watch");
   grunt.loadNpmTasks("grunt-exec");
   grunt.loadNpmTasks("grunt-sitemap");
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
 
   grunt.initConfig({
     copy: {
@@ -29,6 +30,14 @@ module.exports = function (grunt) {
           src: "materialize.min.js",
           dest: "vendor/js/"
         }]
+      },
+      fontawesome: {
+        files: [{
+          expand: true,
+          cwd: "public/bower_components/",
+          src: "font-awesome/**",
+          dest: "vendor/"
+        }]
       }
     },
     sitemap: {
@@ -37,6 +46,42 @@ module.exports = function (grunt) {
             pattern: ['_site/**/*.html', '_site/!**/google*.html'], // this will exclude 'google*.html'
             homepage: "http://bloom.org.au/"
         }
+    },
+    imagemin: {
+      png: {
+        options: {
+          optimizationLevel: 7
+        },
+        files: [
+          {
+            // Set to true to enable the following options…
+            expand: true,
+            // cwd is 'current working directory'
+            cwd: 'bloom-labs.github.io/images/',
+            src: ['**/*.png'],
+            // Could also match cwd line above. i.e. project-directory/img/
+            dest: 'bloom-labs.github.io/images/compressed/',
+            ext: '.png'
+          }
+        ]
+      }
+      // jpg: {
+      //   options: {
+      //     progressive: true
+      //   },
+      //   files: [
+      //     {
+      //       // Set to true to enable the following options…
+      //       expand: true,
+      //       // cwd is 'current working directory'
+      //       cwd: '../images/',
+      //       src: ['**/*.jpg'],
+      //       // Could also match cwd. i.e. project-directory/img/
+      //       dest: '/images/compressed/',
+      //       ext: '.jpg'
+      //     }
+      //   ]
+      // }
     },
     exec: {
       jekyll: {
@@ -53,6 +98,7 @@ module.exports = function (grunt) {
           "_includes/**/*",
           "_layouts/**/*",
           "_posts/**/*",
+          "_sass/**/*",
           "css/**/*",
           "js/**/*",
           "_config.yml",
@@ -74,7 +120,7 @@ module.exports = function (grunt) {
       }
     }
   });
-  grunt.registerTask("build", ["copy", "exec:jekyll", "sitemap"]);
+  grunt.registerTask("build", ["copy", "exec:jekyll", "sitemap", "imagemin"]);
 
   grunt.registerTask("serve", ["build", "connect:server","watch"]);
 

@@ -9,7 +9,6 @@ ul, ol, dl, figure,
     margin-bottom: $spacing-unit / 2;
 }
 
-
 /**
  * Code formatting
  */
@@ -91,20 +90,58 @@ ul.select-dropdown li span {
 }
 
 /**
+ * Navigation
+ */
+.bloom-navigation {
+    background-color: $primary-color;
+}
+
+.banner {
+    color: $dark-primary-color;
+}
+
+.who-we-are {
+    background-color: $light-background-color;
+}
+
+/**
+ * Footer
+ */
+footer {
+    background-color: $primary-color;
+}
+
+/**
  * Icons
  */
+.fa {
+    margin-left: $spacing-unit / 4;
+    margin-right: $spacing-unit / 4;
+    margin-bottom: $spacing-unit / 2;
+    margin-top: $spacing-unit / 2;
+    color: $icon-menu-text-color;
+}
 
+.fa:hover {
+    color: $dark-primary-color;
+}
 
+.fa:active {
+    color: $light-primary-color;
+}
 
-.icon {
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
+.copyright {
+    background-color: $dark-primary-color;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top:0px;
+    margin-bottom:0px;
+}
 
-        path {
-            fill: $grey-color;
-        }
-    }
+.parallax-container {
+    height: 300px;
+}
+
+.main-banner.parallax-container {
+    height: 450px;
 }

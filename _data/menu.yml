@@ -1,8 +1,11 @@
-- text: About
-  url: /about/
+# - text: About
+#   url: /about/
 - text: Blog
   url: /blog/
 # - text: Events
 #   url: /events/
-- text: Join Us
+# - text: Resources
+#   url: /resources/
+- text: Join
   url: /join/
+  action: button

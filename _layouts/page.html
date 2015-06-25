@@ -1,14 +1,26 @@
 ---
 layout: default
 ---
-<div class="container">
-  <header>
-    <h1 class="center-align ">{{ page.title }}</h1>
-    {% if page.subtitle %}
-    	<h6 class="center-align">{{ page.subtitle }}</h6>
+
+ <header class="parallax-container white-text">
+	<div class="container">
+	  	<div class="section pad-bot center-align">
+	  		<br><br><br>
+		    <h1 class="center-align">{{ page.title }}</h1>
+		    {% if page.subtitle %}
+		    	<h6 class="center-align">{{ page.subtitle }}</h6>
+			{% endif %}
+
+		</div>
+	</div>
+	{% if page.bannerImage %}
+		<div class="parallax">
+			<img src="{{ page.bannerImage | prepend: "/images/" | prepend: site.baseurl }}">
+		</div>
 	{% endif %}
   </header>
-  <article class="post-content">
-    {{ content }}
-  </article>
-</div>
+  <div class="container">
+	  <article class="post-content">
+	    {{ content }}
+	  </article>
+  </div>

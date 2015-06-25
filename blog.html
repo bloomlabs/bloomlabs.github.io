@@ -2,6 +2,7 @@
 layout: page
 title: Blog
 comments: true
+bannerImage: blog.png
 permalink: /blog/
 ---
 
@@ -20,13 +21,13 @@ permalink: /blog/
 		        <div class="card-content">
 		          <span class="card-title activator grey-text text-darken-4"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></span>
 		          <p>{{post.summary}}</p>
-		          <a href="{{ post.url | prepend: site.baseurl }}#disqus_thread"></a>
-		          <div id="disqus_thread"></div>
+		          <a class="collection-item" href="{{ post.url | prepend: site.baseurl }}#disqus_thread"></a>
 		          {{ % if page.comments % }}
 		          <script type="text/javascript">
 		          	var disqus_shortname = 'bloomlabs';
 				    (function () {
-				        var s = document.createElement('script'); s.async = true;
+				        var s = document.createElement('script');
+				        s.async = true;
 				        s.type = 'text/javascript';
 				        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
 				        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
