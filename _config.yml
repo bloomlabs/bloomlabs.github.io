@@ -21,5 +21,3 @@ exclude:
   - "node_modules"
   - "public"
   - "package.json"
-gems:
-  - jekyll-redirect-from
