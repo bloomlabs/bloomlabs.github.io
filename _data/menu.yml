@@ -9,5 +9,5 @@
 - text: Join
   url: /join/
   action: button
-- text: App Idea
-  url: /app-idea/
+- text: Tech Idea
+  url: /tech-idea/
